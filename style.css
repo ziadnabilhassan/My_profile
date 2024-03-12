@@ -1,0 +1,220 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+
+.top {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    justify-content: flex-end;
+    align-items: end;
+    position: fixed;
+    float: right;
+    background-color: rgb(44, 195, 129)!important;
+    color: white;
+    border-color: none!important;
+    display: none;
+}
+
+.bg-light {
+    background-color: rgb(44, 195, 129)!important;
+}
+
+a {
+    font-size: 20px;
+    margin-left: 20px;
+    color: white!important;
+    text-decoration: none;
+}
+
+section {
+    padding: 10% 12%;
+}
+
+.home {
+    display: flex;
+    height: 680px;
+    background-image: url(https://images.pexels.com/photos/3459979/pexels-photo-3459979.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.main {
+    max-width: 50%;
+    color: white;
+    padding-top: 25px;
+}
+
+.main h1 {
+    color: rgb(44, 195, 129)
+}
+
+.icon {
+    padding: 20px 0px;
+}
+
+.icon i {
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.img1 {
+    transition: opacity 2s, transform 1s;
+    margin-left: 62%;
+    margin-top: -30%;
+}
+
+.img1:hover {
+    background-color: rgb(44, 195, 129);
+    opacity: 70%;
+    transform: scale(1.1);
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -15%;
+    margin-left: 0%;
+}
+
+.skills .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-left: 15px;
+    background-color: rgb(44, 195, 129);
+    color: white;
+    padding: 10px;
+    width: 300px;
+    margin-top: 5%;
+    transition-duration: .5s;
+}
+
+.skills .card:hover {
+    transform: scale(1.1);
+}
+
+.card i {
+    font-size: 100px;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/5424636/pexels-photo-5424636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height:650px;
+}
+
+.project .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: end;
+    margin-left: 15px;
+    background-color: rgb(44, 195, 129);
+    width: 30%;
+    height: 209px;
+    margin-top: 3%;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project h4 {
+    color: rgb(255, 255, 255);
+    margin: 3%;
+}
+
+.project .card:hover {
+    transform: scale(1.08);
+}
+
+.footer {
+    background-color: rgb(38, 171, 113);
+    height: 10px!important;
+    padding: 3% 0% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+@media(max-width:1010px) {
+    .home {
+        height: 850px;
+    }
+    .main {
+        max-width: 100%;
+        padding-top: 35px;
+    }
+    .icon {
+        padding: 10% 25%;
+    }
+    .img1 {
+        margin-left: 0%;
+        margin-top: 5%;
+        height: 45%!important;
+    }
+    .img1:hover {
+        opacity: 70%;
+        margin-top: 0%;
+    }
+    .home h4 {
+        margin-left: 10%!important;
+    }
+    .skills .card {
+        width: 300px;
+    }
+    .project {
+        height: 1500px;
+    }
+    .project .card {
+        width: 300px;
+    }
+    .footer {
+        height: 200px!important;
+        flex-direction: column;
+    }
+    .footer p {
+        font-size: 20px!important;
+    }
+}
